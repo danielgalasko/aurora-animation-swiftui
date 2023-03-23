@@ -1,5 +1,9 @@
 # aurora-animation-swiftui
 
-A simple animation of the aurora effect
+The Aurora Effect in SwiftUI.
 
-![preview](./Preview.mp4)
+Open the `.xcodeproj` to learn more.
+
+<video id="ss" controls="" muted="" loop="" autoplay="">
+  <source src="https://github.com/danielgalasko/aurora-animation-swiftui/blob/main/preview.mov" type="video/mov">
+</video>
