@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             AuroraView()
-            VStack(spacing: 16) {
+            VStack {
                 Spacer()
-                VStack {
+                VStack(spacing: 16) {
                     Text("Aurora")
                         .font(.largeTitle)
                     Text("""
@@ -22,8 +22,11 @@ The word "aurora" is derived from the name of the Roman goddess of the dawn, Aur
 Ancient Greek poets used the corresponding name Eos metaphorically to refer to dawn, often mentioning its play of colors across the otherwise dark sky.
 """)
                     .font(.body)
-                    Text("Source: Wikipedia")
-                        .font(.caption)
+                    HStack {
+                        Spacer()
+                        Text("Source: Wikipedia")
+                            .font(.caption)
+                    }
                 }
                 .padding()
                 .background(Material.thin, in: RoundedRectangle(cornerRadius: 8))
